@@ -2,38 +2,54 @@
 <html lang="ru">
   <head>
     <link href="css/style.css" rel="stylesheet">
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    
     <meta charset="utf-8">
     <title>Магазин Глэйси</title>
   </head>
   <body>
-     <header>
-        <div class="header-top">
-            <div class="header-logo">
-                <img src="img/logo.png" alt="Логотип">
-            </div>
-            <nav>
-                <ul class="main-nav">
-                    <li><a href="#">Каталог</a></li>
-                    <li><a href="#">Доставка и оплата</a></li>
-                    <li><a href="#">О Компании</a></li>
-                </ul>
-            </nav>
-            
-            <label class="label-search" for="search"><img class="search" src="/img/search.png" alt="Поиск"></label>
-            <input type="search" id="search">
-           
-            
-             
-              
-                
-         </div>
-     </header>
-   
-       
-    
-
-   
-
+    <div id="wrapper">
+        <div id="container">
+            <header>
+                <div class="header-top">
+                    <div class="header-logo">
+                        <img src="img/logo.png" alt="Логотип">
+                    </div>
+                    <div class="nav-left">
+                        <nav>
+                            <ul class="main-nav">
+                                <li><a class="menu" href="#">Каталог</a></li>
+                                <li><a class="menu" href="#">Доставка и оплата</a></li>
+                                <li><a class="menu" href="#">О Компании</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="nav-right">
+                        <nav>
+                            <ul class="second-nav">
+                                <li id="search">
+                                    <a href="#" class="search"></a>
+                                    <ul class="subnav">
+                                        <li class="drop-search"> </li>
+                                    </ul>
+                                </li>
+                                <li id="login">
+                                    <a href="#" class="login"></a>
+                                    <ul class="subnav">
+                                        <li class="drop-search"> </li>
+                                    </ul>
+                                </li>
+                                <li id="cart">
+                                    <a href="#" class="cart"></a>
+                                    <ul class="subnav">
+                                        <li class="drop-search"> </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>   
+                </div>
+            </header>
+        </div>
+    </div>
   </body>
 </html>
