@@ -1,0 +1,49 @@
+body {
+    background: #88a093;
+}
+.label-search {
+    margin-left: 200px;
+}
+img.search {
+    margin-top: 20px;
+}
+img.search:hover {
+    background: url(/img/search-hover.png);
+    
+    
+}
+
+input[type=search] {
+    
+   
+    transition: all .1s;
+
+    
+    
+}
+
+
+
+
+ input[type=search] {
+     
+	 width: 0px;
+	 position: relative;
+     top:  -10px;
+	 
+	
+     
+}
+ input[type=search]:hover {
+	 background-color: #88a093;
+}
+ input[type=search]:focus {
+	 width: 130px;
+     position: relative;
+     top: 20px;
+	 left: -130px;
+	 color: #000;
+	 background-color: #fff;
+	 cursor: auto;
+     outline: none;
+}
