@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Roboto', arial;
+    src: url("fonts/roboto.woff") format("woff");
+    src: url("fonts/roboto.ttf") format("woff2");
+    src: url("fonts/robotomedium.woff") format("woff");
+    src: url("fonts/robotomedium.ttf") format("woff2");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: #fff;
+    font-weight: normal;
+}
+
+h1, 
+h2 {
+	font-size: 35px;
+	font-weight: bold;
+}
