@@ -12,7 +12,7 @@ body {
 	font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 16px;
     line-height: normal;
-    color: #fff;
+    color: #000;
     font-weight: normal;
 }
 
@@ -20,4 +20,15 @@ h1,
 h2 {
 	font-size: 35px;
 	font-weight: bold;
+}
+.filters {
+    width: 700px;
+}
+.filter-block {
+    display: inline-block;
+    
+}
+
+.filter-block label:first-child {
+    display: block;
 }
