@@ -58,7 +58,7 @@
               <div class="cart">
                 <table>
                   <tr>
-                    <td><button type="botton" class="botton">X</button></td>
+                    <td><button type="botton" class="btn-cart">X</button></td>
                     <td><img src="img/item/one.jpg" width="33" height="33" alt="Пломбир"></td>
                     <td>Пломбир с апельсиновым джемом</td>
                     <td>1.5кг</td>
@@ -93,15 +93,15 @@
             <div class="slider">
               <div class="slides slide1">
                 Крем-брюле и пломбир с малиновым джемом
-                <a class="button" href="#">Давайте оба!</a>
+                <a class="btn-slide" href="#">Давайте оба!</a>
               </div>
               <div class="slides slide2">
                 Шоколадный пломбир и лимонный сорбет
-                <a class="button" href="#">Давайте оба!</a>
+                <a class="btn-slide" href="#">Давайте оба!</a>
               </div>
               <div class="slides slide3">
                 Пломбир с помадкой и клубничный щербет
-                <a class="button" href="#">Давайте оба!</a>
+                <a class="btn-slide" href="#">Давайте оба!</a>
               </div>
             </div>  
             <div class="controls">
@@ -120,12 +120,12 @@
           <div class="banner-left">
             <h2>Малинка даром!</h2>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#" class="button banner">Хочу варенье!</a>
+            <a href="#" class="btn">Хочу варенье!</a>
           </div>
           <div class="banner-right">
             <h2>Шоколадки даром!</h2>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки  абсолютно бесплатно.</p>
-            <a href="#" class="button banner">Хочу шоколадки!</a>
+            <a href="#" class="btn">Хочу шоколадки!</a>
           </div>       
           <!-- END Banners -->
           <!-- Bestsellers -->
@@ -159,22 +159,20 @@
           <!-- Features -->
           <section class="features">
             <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
-            <div class="features-block">
-              <img class="features" src="img/icon/features-icon-1.svg" width="48" height="48" alt="Иконка" >
-              <p class="features-text">Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</p>
-            </div>  
-            <div class="features-block">
-              <img class="features" src="img/icon/features-icon-2.svg" width="48" height="48" alt="Иконка" >
-              <p class="features-text">Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.</p>
-            </div>
-            <div class="features-block">
-              <img class="features" src="img/icon/features-icon-3.svg" width="48" height="48" alt="Иконка" >
-              <p class="features-text">Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья. </p>
-            </div>
-            <div class="features-block">
-              <img class="features" src="img/icon/features-icon-4.svg" width="47" height="47" alt="Иконка" >
-              <p class="features-text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
-            </div>
+            <ul class="features-block">
+              <li>
+                Все наше мороженое изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.
+              </li>
+              <li>
+                Закупка ингредиентов  производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
+              </li>
+              <li>
+                Для приготовления мороженого используются настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального, экологически чистого сырья.
+              </li>
+              <li>
+                Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.
+              </li>
+            </ul>
           </section>
           <!-- END Features -->
           <!-- Banners -->
@@ -186,7 +184,7 @@
             <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
             <form class="form-subscribe" action="#" method="post">
               <input class="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
-              <input class="btn" type="submit" value="Отправить">
+              <button type="submit" class="button">Отправить</button>
             </form>  
           </div>
           <!-- END Banners -->
@@ -204,17 +202,7 @@
             </div>
           </div>
           <!-- END Map -->
-          <!-- Modal -->
-          <div class="feedback" id="#modal-feedback">
-            <p>Мы обязательно вам ответим!</p>
-            <form class="modal-feedback" method="post" action="#" >
-              <input class="name-feedback" type="text" name="user" id="name" placeholder="Как Вас зовут?" required>
-              <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа" required>
-              <textarea rows="6" name="text">Напишите что-нибудь...</textarea>
-              <input class="btn" type="submit" value="Отправить">
-            </form>
-          </div>
-          <!-- END Modal -->
+          
         </main>
         <!-- Footer -->
         <footer class="main-footer">
@@ -228,16 +216,12 @@
 
             <div class="footer-info">
               <div class="info-col">
-                <img class="footer-icon" src="img/icon/footer-heart.svg" width="15" height="13" alt="Сердечко" >
-                <a href="#">Для поставщиков</a>
-                <br>
-                <a href="#">Наши документы</a>
-              </div>
-            
-              <div class="info-col">
-                <a href="#">О производстве</a>
-                <br>
-                <a href="#">Экологические стандарты</a>
+                <ul>
+                  <li><a href="#">Для поставщиков</a></li>
+                  <li><a href="#">Наши документы</a></li>
+                  <li><a href="#">О производстве</a></li>
+                  <li><a href="#">Экологические стандарты</a></li>
+                </ul>
               </div>
             </div>
             
@@ -246,8 +230,19 @@
               <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>@ 2016</p>
             </div>
           </div>
-        </footer> 
-      <!-- END Footer -->
+        </footer>
+        <!-- END Footer -->
+        <!-- Modal -->
+        <div class="feedback" id="#modal-feedback">
+          <p>Мы обязательно вам ответим!</p>
+          <form class="modal-feedback" method="post" action="#" >
+            <input class="name-feedback" type="text" name="user" id="name" placeholder="Как Вас зовут?" required>
+            <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа" required>
+            <textarea rows="6" name="text">Напишите что-нибудь...</textarea>
+            <button type="submit" class="button">Отправить</button>
+          </form>
+        </div>
+        <!-- END Modal --> 
       </div>   
     </div>  
   </body>
