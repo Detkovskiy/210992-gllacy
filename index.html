@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/map.js"></script>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -191,20 +192,22 @@
           </section>
           <!-- END Features -->
           <!-- Banners -->
-          <div class="banner-left news">
-            <h4>Новое в нашем блоге</h4>
-            <a href="#">10  способов сервировки фруктовых щербетов к столу</a>
-          </div>
-          <div class="banner-right subscribe">
-            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
-            <form class="form-subscribe" action="#" method="post">
-              <input class="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
-              <button type="submit" class="button">Отправить</button>
-            </form>  
+          <div class="banners clearfix">
+            <div class="banner-bottom news">
+              <h4>Новое в нашем блоге</h4>
+              <a href="#">10  способов сервировки фруктовых щербетов <br>к столу</a>
+            </div>
+            <div class="banner-bottom subscribe">
+              <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
+              <form class="form-subscribe" action="#" method="post">
+                <input class="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
+                <button type="submit" class="button">Отправить</button>
+              </form>  
+            </div>
           </div>
           <!-- END Banners -->
           <!-- Map -->
-          <div class="map">
+          <div id="map">
             <div class="contact">
               <ul>
                 <li>Адрес главного офиса и офлайн магазина:</li>
@@ -213,15 +216,14 @@
                 <li><span> 8 812 450-25-25</span></li>
                 <li>(с 10 до 20 ежедневно)</li>
               </ul>
-              <a href="#modal-feedback" class="button feedback">Форма обратной связи</a>
+              <a href="#modal-feedback" class="btn-feedback">Форма обратной связи</a>
             </div>
-          </div>
+          </div> 
           <!-- END Map -->
-          
         </main>
         <!-- Footer -->
-        <footer class="main-footer">
-          <div class="container">
+        <footer class="main-footer clearfix">
+          
             <div class="footer-social">
               <a class="social-btn tw" href="#"><img class="twitter" src="img/icon/tw.svg" width="37" height="37" alt="twitter"></a>
               <a class="social-btn inst" href="#"><img class="instagram" src="img/icon/inst.svg" width="37" height="37" alt="instagram"></a>
@@ -241,10 +243,10 @@
             </div>
             
             <div class="footer-copyright">
-              <a href="https://htmlacademy.ru"><img src="img/htmlacademy.png" width="108" height="37" alt="Html Academy"></a>
+              <a href="https://htmlacademy.ru"><img src="img/icon/logo-footer.svg" width="108" height="37" alt="Html Academy"></a>
               <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>@ 2016</p>
             </div>
-          </div>
+          
         </footer>
         <!-- END Footer -->
         <!-- Modal -->
