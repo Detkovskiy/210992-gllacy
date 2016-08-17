@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
-    <script src="js/map.js"></script>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
@@ -11,18 +9,20 @@
   <body>
     <div class="wrapper-background">
       <div class="wrapper">
+
         <!-- Header  -->
+
         <header class="header-top clearfix">
           <div class="logo">
             <img src="img/logo.svg" width="154" height="64" alt="Магазин мороженки">
           </div>
 
-          <nav class="main-navigatoin">
-            <ul>
+          <nav class="nav-navigatoin">
+            <ul class="main-navigatoin">
               <li>
                 <a href="catalog.html">Каталог</a>
                 <ul class="sub-menu">
-                  <li>Новинки</li>
+                  <li><span>Новинки</span></li>
                   <li><a href="#">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -88,9 +88,13 @@
             <span>8 812 450-25-25</span>
           </div>
         </header>
+
         <!-- End header-->
+
         <main>
+
           <!-- Slider -->
+
           <section class="wrapper-slider">
             <div class="slider">
               <div class="slides slide1">
@@ -117,8 +121,11 @@
               <label for="slide3"></label>  
             </div>
           </section>
+
           <!-- END Slider -->
+
           <!-- Banners -->
+
           <div class="banners clearfix">
             <div class="banner to-left">
               <h2>Малинка даром!</h2>
@@ -131,8 +138,11 @@
               <a href="#" class="btn">Хочу шоколадки!</a>
             </div>
           </div>       
+
           <!-- END Banners -->
+
           <!-- Bestsellers -->
+
           <section class="bestsellers clearfix">
             <div class="bestsellers-item">
               <img src="img/item/item-one.png" width="267" height="267" alt="Сливочное">
@@ -171,8 +181,11 @@
               </div>
             </div>
           </section>
+
           <!-- END Bestsellers -->
+
           <!-- Features -->
+
           <section class="features">
             <h1>Магазин Глейси  — это онлайн и офлайн магазин по продаже мороженого собственного производства на развес</h1>
             <ul class="features-block">
@@ -190,8 +203,11 @@
               </li>
             </ul>
           </section>
+
           <!-- END Features -->
+
           <!-- Banners -->
+
           <div class="banners clearfix">
             <div class="banner-bottom news">
               <h4>Новое в нашем блоге</h4>
@@ -205,8 +221,11 @@
               </form>  
             </div>
           </div>
+
           <!-- END Banners -->
+
           <!-- Map -->
+
           <div id="map">
             <div class="contact">
               <ul>
@@ -219,9 +238,13 @@
               <a href="#modal-feedback" class="btn-feedback">Форма обратной связи</a>
             </div>
           </div> 
+
           <!-- END Map -->
+
         </main>
+
         <!-- Footer -->
+
         <footer class="main-footer clearfix">
           
             <div class="footer-social">
@@ -248,8 +271,11 @@
             </div>
           
         </footer>
+
         <!-- END Footer -->
+
         <!-- Modal -->
+
         <div class="feedback" id="#modal-feedback">
           <p>Мы обязательно вам ответим!</p>
           <form class="modal-feedback" method="post" action="#" >
@@ -259,8 +285,12 @@
             <button type="submit" class="button">Отправить</button>
           </form>
         </div>
+
         <!-- END Modal --> 
+        
       </div>   
     </div>  
   </body>
+  <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+  <script src="js/map.js"></script>
 </html>
