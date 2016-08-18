@@ -39,7 +39,7 @@
               <a href="#"><img src="img/icon/search-white.svg" width="17" height="17" alt="Поиск"></a>
               <div class="search">
                 <form action="#" method="post">
-                  <input type="search" name="search" placeholder="Что ищем?">
+                  <input type="search" class="input-search" name="search" placeholder="Что ищем?">
                 </form>
               </div>
             </div>
@@ -47,45 +47,46 @@
               <a href="#"><img src="img/icon/login-white.svg" width="21" height="19" alt="Вход">Вход</a>
               <div class="login">
                 <form class="login-form" action="#" method="post">
-                  <input type="email" name="email-address" placeholder="Электронная почта">
-                  <input type="password" name="password" placeholder="Пароль">
-                  <button type="submit">Войти</button>
+                  <input type="email" class="input-email" name="email-address" placeholder="Электронная почта">
+                  <input type="password" class="input-password" name="password" placeholder="Пароль">
+                  <div class="buttons clearfix">
+                    <button type="submit" class="button block">Войти</button>
+                    <a class="button-link" href="#">Забыли пароль?</a>
+                    <a class="button-link" href="#">Новая регистрация</a>
+                  </div>                  
                 </form>
-                <a href="#">Забыли пароль?</a>
-                <a href="#">Новая регистрация</a>
+
               </div>
             </div>
             <div class="user-cart">
-              <a href="#"><img src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина"></a>
-              <div class="cart">
-                <table>
+              <a href="#"><img src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Пусто</a>
+              <div class="cart clearfix">
+                <table class="cart-table">
                   <tr>
-                    <td><button type="botton" class="button-cart">X</button></td>
-                    <td><img src="img/item/one.jpg" width="33" height="33" alt="Пломбир"></td>
-                    <td>Пломбир с апельсиновым джемом</td>
-                    <td>1.5кг</td>
-                    <td>х</td>
-                    <td>200 руб.</td>
+                    <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
+                    <td><img src="img/item/one.png" width="33" height="33" alt="Пломбир"></td>
+                    <td class="name-item">Пломбир с апельсиновым джемом</td>
+                    <td class="item-weight">1.5кг</td>
+                    <td class="multiplier">х</td>
+                    <td class="item-cost">200 руб.</td>
                     <td>300 руб.</td>
                   </tr>
                   <tr>
-                    <td>X</td>
-                    <td><img src="img/item/two.jpg" width="33" height="33" alt="Пломбир"></td>
+                    <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
+                    <td><img src="img/item/two.png" width="33" height="33" alt="Пломбир"></td>
                     <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td>1.5кг</td>
-                    <td>х</td>
-                    <td>300 руб.</td>
+                    <td class="item-weight">1.5кг</td>
+                    <td class="multiplier">х</td>
+                    <td class="item-cost">300 руб.</td>
                     <td>450 руб.</td>
                   </tr>
                 </table>
                 <p>Итого: 750 руб.</p>
-                <a class="btn" href="#">Оформить заказ</a>
+                <a class="button" href="#">Оформить заказ</a>
               </div>
             </div>
           </div>
         </header>
-
-        <!-- End header-->
 
         <main>
           <div class="mode">
@@ -100,8 +101,6 @@
             <li><a href="catalog.html">Каталог</a></li>
             <li><a class="active">Сливочное</a></li>
           </ul>
-
-          <!-- END Breadcrumbs -->
 
           <h1>Сливочное мороженое</h1>
 
@@ -161,8 +160,6 @@
               <button type="submit" class="button-filter">Применить</button>
             </form>
           </div>       
-
-          <!-- END Filters -->
 
           <!-- Items -->
 
@@ -278,8 +275,6 @@
             
           </section>
 
-          <!-- END Items -->
-
           <!-- Paginator -->
 
           <ul class="item-navigation">
@@ -321,8 +316,6 @@
             </div>
           
         </footer> 
-
-        <!-- END Footer --> 
         
       </div>
     </div>      
