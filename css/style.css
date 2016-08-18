@@ -1,27 +1,18 @@
-@font-face {
-    font-family: "Roboto", sans-serif;
-    src: url("fonts/roboto.woff") format("woff"),
-         url("fonts/roboto.woff2") format("woff2"),
-         url("fonts/robotomedium.woff") format("woff"),
-         url("fonts/robotomedium.woff2") format("woff2");
-    font-style: normal;
-    font-weight: normal;
-}
-
 body {
-	font-family: Roboto, Arial, sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     line-height: 22px;
     color: #fff;
-    font-weight: normal;
+    font-weight: 400;
 }
 
 h1, 
 h2 {
-    font-size: 35px;
-    font-weight: bold;
-    line-height: 41px;
     margin: 0 0;
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: 700; 
+    
 }
 
 .clearfix::before,
@@ -55,7 +46,7 @@ h2 {
 
 .logo {
     float: left;
-    margin-left: -10px;
+    margin-left: -5px;
 }
 
 /* main-navigatoin */
@@ -65,56 +56,55 @@ h2 {
 }
 
 .main-navigatoin {
-    padding-top: 22px;
-    padding-left: 30px;
+    padding-top: 13px;
+    padding-left: 16px;
     list-style: none;
-    font-size: 0px;  
-    
-    
+    font-size: 0px;   
 }
 
-.main-navigatoin > li {  
+.main-navigatoin > li {       
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    position: relative;
+    padding: 7px 14px;
+    padding-bottom: 0px;
+    border-radius: 14px;   
 }
 
-.main-navigatoin > li > a {
-    margin-right: 29px;
+.main-navigatoin > li > a {   
     font-size: 16px;
-    line-height: 20px;
-    font-weight: bold;
-    text-decoration: none;
+    line-height: 18px;
     color: #fff;
+    font-weight: 700;
+    text-decoration: none;
     border-bottom: 1px solid;
     border-bottom-color: rgba(255,255,255,0.2);    
 }
 
-.main-navigatoin > li > a:hover {
-    position: relative;
-    padding: 6px 14px;
-    left: -14px;
-    margin-right: 1px;
-    border-bottom: none;
+.main-navigatoin > li:hover {
     background: #f8f7f4;
-    
-    border-radius: 15px;
+}
+
+.main-navigatoin > li:hover a{
     color: #000;
+    border: none;
 }
 
 /* sub-navigatoin */
-
 .sub-menu {
+    position: absolute;
+    top: 37px;
+    left: 0px;
+    padding: 0;
+    
     display: none;
-    width: 143px;
+    
+    z-index: 2;
+    width: 143px;  
     list-style: none;
     font-size: 0px;
-    position: absolute;
-    left: -14px;
-    padding: 0;
     border-radius: 5px;
     background: #f8f7f4;
-    z-index: 2;
 }
 
 .sub-menu li:first-child {
@@ -240,7 +230,7 @@ a.active-sub-menu {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 6px 16px;
+    padding: 5px 16px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 20px;
     margin-right: 10px;
@@ -257,7 +247,7 @@ a.active-sub-menu {
 
 .user-login img {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     margin-right: 8px;
 }
 
@@ -306,7 +296,9 @@ a.active-sub-menu {
     position: relative;
     display: inline-block;
     vertical-align: top;
-    padding: 6px 16px;
+    padding: 5px 16px;
+
+    min-width: 85px;
     background-color: rgba(255,255,255,0.2);
     border-radius: 20px;
 }
@@ -316,13 +308,14 @@ a.active-sub-menu {
     vertical-align: middle;
     font-size: 14px;
     line-height: 16px;
+    font-weight: 500;
     text-decoration: none;
     color: #fff;
 }
 
 .user-cart > a > img {
     display: inline-block;
-    vertical-align: text-bottom;
+    vertical-align: middle;
     margin-right: 8px;
 }
 
@@ -391,16 +384,18 @@ a.active-sub-menu {
 }
 
 .mode {
-    clear: both;
+    
     text-align: right;
-    font-weight: bold;
+    font-weight: 700;
+    margin-top: 63px;
 }
 
 .mode p {
     margin-top: 0px;
-    margin-bottom: 6px;
+    margin-bottom: 4px;
     font-size: 14px;
     line-height: 16px;
+    font-weight: 700;
 }
 
 .mode span {
@@ -410,7 +405,7 @@ a.active-sub-menu {
 
 /* slider */
 .wrapper-slider {  
-    margin-top: -40px; 
+    margin-top: -42px; 
 }
 
 .slider {      
@@ -459,18 +454,20 @@ a.active-sub-menu {
 
 .wrapper-slider .controls {
     position: relative;
-    top: -135px;
+    top: -137px;
+    font-size: 0px;
 }
 
 .wrapper-slider label {
     cursor: pointer;
     border: 2px solid #fff;
     display: inline-block;
-    height: 19px;
-    margin: 25px 12px 0 16px;
+    height: 17px;
+    margin: 25px 8px 0 0;
     position: relative;
-    width: 19px;
+    width: 17px;
     border-radius: 50%; 
+    font-size: 16px;
 }
 
 .wrapper-slider label:hover, 
@@ -481,7 +478,7 @@ a.active-sub-menu {
 }
 
 .slides h2 {
-    padding-top: 320px;
+    padding-top: 317px;
     font-size: 60px;
     line-height: 60px;
     font-weight: bold;
@@ -505,11 +502,16 @@ a.active-sub-menu {
 
 .banner {
     box-sizing: border-box;
+    min-height: 229px;
     width: 560px;
-    padding: 20px 20px 23px 20px;
+    padding: 15px 20px 23px 20px;
     font-size: 18px;
     line-height: 22px;
-    font-weight: bold;
+    font-weight: 700;
+}
+
+.banner p {
+    margin-top: 16px;
 }
 
 .to-left {
@@ -527,6 +529,7 @@ a.active-sub-menu {
 .banner a {
     display: block;
     float: right;
+    margin-top: 25px;
     padding: 11px 23px;
     background: #f06743;
     border-radius: 21px;
@@ -540,23 +543,26 @@ a.active-sub-menu {
 /* bestsellers */
 
 .bestsellers {
-    margin-top: 40px;
+    margin-top: 31px;
     clear: both;
+    margin-left: -9px;
+    margin-right: -9px;
 }
 
 .bestsellers-item {
     position: relative;
     float: left;
     width: 267px;
-    margin-left: 2px;
+  
     padding-left: 9px;
     padding-right: 9px;
     padding-top: 9px;
+    margin-right: 8px;
 
 }
 
-.bestsellers-item:first-child {
-    margin-left: 0;
+.bestsellers-item:last-child {
+    margin-right: 0;
 }
 
 .hit {
@@ -598,6 +604,7 @@ a.active-sub-menu {
 
 .bestsellers-item:hover .item-review {
     display: block;
+
 }
 
 .bestsellers-item:hover {
@@ -620,6 +627,7 @@ a.active-sub-menu {
 
 .features {
     padding: 20px 20px;
+    margin-top: -35px;
     background: url(../img/features.jpg);
     color: #323232;
     border-radius: 15px;
@@ -679,8 +687,9 @@ a.active-sub-menu {
 
 .banners {
     position: relative;
+
     z-index: 1;
-    margin-top: -80px;
+    margin-top: -85px;
 }
 
 .banners-bottom {
