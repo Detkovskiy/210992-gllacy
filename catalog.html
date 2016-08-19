@@ -19,7 +19,7 @@
 
           <nav class="nav-navigatoin">
             <ul class="main-navigatoin">
-              <li>
+              <li class="active">
                 <a>Каталог</a>
                 <ul class="sub-menu">
                   <li><span>Новинки</span></li>
@@ -86,13 +86,14 @@
               </div>
             </div>
           </div>
+          <div class="mode">
+            <p>C 10 до 20, ежедневно</p>
+            <span>8 812 450-25-25</span>
+          </div>
         </header>
 
         <main>
-          <div class="mode">
-            <p>с 10 до 20, ежедневно</p>
-            <span>8 812 450-25-25</span>
-          </div>
+          
 
           <!-- Breadcrumbs -->
 
@@ -110,7 +111,7 @@
             <form action="#">
               <div class="filter-block">
                 <label class="top" for="popularity">Сортировка:</label>
-                <select name="popularity" id="popularity">
+                <select name="popularity" class="popularity" id="popularity">
                   <option value="popularity">по популярности</option>
                   <option value="name">по названию</option>
                   <option value="price">по цене</option>
@@ -293,29 +294,31 @@
         <footer class="main-footer clearfix">
           
             <div class="footer-social">
-              <a class="social-btn tw" href="#"><img class="twitter" src="img/icon/tw.svg" width="37" height="37" alt="twitter"></a>
-              <a class="social-btn inst" href="#"><img class="instagram" src="img/icon/inst.svg" width="37" height="37" alt="instagram"></a>
-              <a class="social-btn fb" href="#"><img class="feacebook" src="img/icon/fb.svg" width="37" height="37" alt="feacebook"></a>
-              <a class="social-btn vk" href="#"><img class="vk" src="img/icon/vk.svg" width="37" height="37" alt="vk"></a>
+              <a class="social-btn tw" href="#">Twitter</a>
+              <a class="social-btn inst" href="#">Instagram</a>
+              <a class="social-btn fb" href="#">Faicebook</a>
+              <a class="social-btn vk" href="#">Вконтакте</a>
             </div>
 
             <div class="footer-info">
-              <div class="info-col">
-                <ul>
+              <div class="info">
+                <ul class="info-left">
                   <li><a href="#">Для поставщиков</a></li>
-                  <li><a href="#">Наши документы</a></li>
                   <li><a href="#">О производстве</a></li>
+                </ul> 
+                <ul class="info-right">
+                  <li><a href="#">Наши документы</a></li>
                   <li><a href="#">Экологические стандарты</a></li>
-                </ul>
+                </ul> 
               </div>
             </div>
             
             <div class="footer-copyright">
               <a href="https://htmlacademy.ru"><img src="img/icon/logo-footer.svg" width="108" height="37" alt="Html Academy"></a>
-              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a>@ 2016</p>
+              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> @ 2016</p>
             </div>
           
-        </footer> 
+        </footer>
         
       </div>
     </div>      
