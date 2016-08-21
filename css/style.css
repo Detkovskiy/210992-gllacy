@@ -28,12 +28,14 @@ h2 {
 /* wrapper */
 
 .wrapper-background {
-    width: 1200px;
-    margin: 0 auto;
+    
     background: #849d8f;
 }
 
 .wrapper {
+    
+    width: 1146px;
+    margin: 0 auto;
     padding-left: 27px;
     padding-right: 27px;
 }
@@ -54,6 +56,7 @@ h2 {
 .nav-navigatoin {
     float: left;
 }
+
 
 .main-navigatoin {
     padding-top: 13px;
@@ -104,7 +107,7 @@ li.active > a {
     top: 37px;
     left: 0px;
     padding: 0;  
-    display: none;  
+    display: none;
     z-index: 2;
     width: 143px;  
     list-style: none;
@@ -519,13 +522,13 @@ a.active-sub-menu {
     margin-top: 16px;
 }
 
-.to-left {
+.raspberries {
     float: left;
     background: url(../img/banner-left.jpg);
     border-radius: 15px;
 }
 
-.to-right {
+.chocolate {
     float: right;
     background: url(../img/banner-right.jpg);
     border-radius: 15px;
@@ -568,10 +571,13 @@ a.active-sub-menu {
     margin-right: 0;
 }
 
-.hit {
+.bestsellers-item::before {
+    content: "";
     position: absolute;
-    top: 9px;
-    left: 9px;
+    z-index: 1;
+    width: 61px;
+    height: 61px;
+    background: url(../img/hit.png);
 }
 
 .price {
@@ -591,8 +597,9 @@ a.active-sub-menu {
 
 
 .item-name {
-    position: absolute;
-    top: 288px;
+    /*position: absolute;
+    top: 288px;*/
+    margin-top: 7px;
     display: block;
     text-align: center;
     color: #fff;
@@ -635,13 +642,13 @@ a.active-sub-menu {
     min-height: 306px;
     box-sizing: border-box;
     padding: 25px 20px;
-    margin-top: 88px;
+    margin-top: 37px;
     background: url(../img/features.jpg);
     color: #323232;
     border-radius: 15px;
 }
 
-.features h1 {
+.features h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
