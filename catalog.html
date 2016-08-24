@@ -4,6 +4,7 @@
     <link href="css/normalize.css" rel="stylesheet">  
     <link href="css/style.css" rel="stylesheet">  
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>Сливочное мороженое</title>
   </head>
   <body>
@@ -39,52 +40,59 @@
           <div class="user-block">
             <div class="user-search">
               <a href="#"><img src="img/icon/search-white.svg" width="17" height="17" alt="Поиск"></a>
-              <div class="search">
-                <form action="#" method="post">
-                  <input type="search" class="input-search" name="search" placeholder="Что ищем?">
-                </form>
+              <div class="wrapper-menu">
+                <div class="search">
+                  <form action="#" method="post">
+                    <input type="search" class="input-search" name="search" placeholder="Что ищем?">
+                  </form>
+                </div>
               </div>
             </div>
             <div class="user-login">
               <a href="#"><img src="img/icon/login-white.svg" width="21" height="19" alt="Вход">Вход</a>
-              <div class="login">
-                <form class="login-form" action="#" method="post">
-                  <input type="email" class="input-email" name="email-address" placeholder="Электронная почта">
-                  <input type="password" class="input-password" name="password" placeholder="Пароль">
-                  <div class="buttons clearfix">
-                    <button type="submit" class="button block">Войти</button>
-                    <a class="button-link" href="#">Забыли пароль?</a>
-                    <a class="button-link" href="#">Новая регистрация</a>
-                  </div>                  
-                </form>
-
+              <div class="wrapper-menu">
+                <div class="login">
+                  <form class="login-form" action="#" method="post">
+                      <input  type="email"class="input-email" name="email-address" placeholder="Электронная почта">
+                      <label class="label-email">Введите почту</label>
+                    <input type="password" class="input-password" name="password" placeholder="Пароль">
+                    <label class="label-password">Введите пароль</label>
+                    <div class="buttons clearfix">
+                      <button type="submit" class="button block">Войти</button>
+                      <a class="button-link" href="#">Забыли пароль?</a>
+                      <a class="button-link" href="#">Новая регистрация</a>
+                    </div>                  
+                  </form>
+                </div>
               </div>
             </div>
             <div class="user-cart">
               <a href="#"><img src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Пусто</a>
-              <div class="cart clearfix">
-                <table class="cart-table">
-                  <tr>
-                    <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
-                    <td><img src="img/item/one.png" width="33" height="33" alt="Пломбир"></td>
-                    <td class="name-item">Пломбир с апельсиновым джемом</td>
-                    <td class="item-weight">1.5кг</td>
-                    <td class="multiplier">х</td>
-                    <td class="item-cost">200 руб.</td>
-                    <td>300 руб.</td>
-                  </tr>
-                  <tr>
-                    <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
-                    <td><img src="img/item/two.png" width="33" height="33" alt="Пломбир"></td>
-                    <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-                    <td class="item-weight">1.5кг</td>
-                    <td class="multiplier">х</td>
-                    <td class="item-cost">300 руб.</td>
-                    <td>450 руб.</td>
-                  </tr>
-                </table>
-                <p>Итого: 750 руб.</p>
-                <a class="button" href="#">Оформить заказ</a>
+              <div class="wrapper-menu">
+                <div class="cart clearfix">
+                  <table class="cart-table">
+                    <tr>
+                      <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
+                      <td><img src="img/item/one.png" width="33" height="33" alt="Пломбир"></td>
+                      <td class="name-item">Пломбир с апельсиновым джемом</td>
+                      <td class="item-weight">1.5кг</td>
+                      <td class="multiplier">х</td>
+                      <td class="item-cost">200 руб.</td>
+                      <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                      <td><button type="botton" name="botton-del" class="btn-cart">X</button></td>
+                      <td><img src="img/item/two.png" width="33" height="33" alt="Пломбир"></td>
+                      <td>Клубничный пломбир с присыпкой из белого шоколада</td>
+                      <td class="item-weight">1.5кг</td>
+                      <td class="multiplier">х</td>
+                      <td class="item-cost">300 руб.</td>
+                      <td>450 руб.</td>
+                    </tr>
+                  </table>
+                  <p>Итого: 750 руб.</p>
+                  <a class="button" href="#">Оформить заказ</a>
+                </div>
               </div>
             </div>
           </div>
@@ -129,18 +137,24 @@
 
               <div class="filter-block">
                 <label class="top">Жирность:</label>
-                <label for="zero">
-                  <input type="radio" name="fatness" id="zero" value="zero">0%
-                </label>
-                <label for="ten">
-                  <input type="radio" name="fatness" id="ten" value="ten" checked>до 10%
-                </label>
-                <label for="three">
-                  <input type="radio" name="fatness" id="three" value="three">до 30%
-                </label>
-                <label for="three-plus">
-                  <input type="radio" name="fatness" id="three-plus" value="three-plus">выше 30%
-                </label>
+                <div class="fatness">
+                  <label class="fatness-radio" >
+                    <input type="radio" name="fatness">
+                      <span class="radio-indicator"></span>0%
+                  </label>
+                  <label class="fatness-radio">
+                    <input type="radio" name="fatness" checked>
+                      <span class="radio-indicator"></span>до 10%
+                  </label>
+                  <label class="fatness-radio">
+                    <input type="radio" name="fatness">
+                      <span class="radio-indicator"></span>до 30%
+                  </label>
+                  <label class="fatness-radio">
+                    <input  type="radio" name="fatness">
+                      <span class="radio-indicator"></span>выше 30%
+                  </label>
+                </div>
               </div>
               
               <div class="filter-block">
