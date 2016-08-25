@@ -463,7 +463,7 @@ body > input[type="radio"] {
 }
 
 .wrapper-background:before {
-  background-image: url("../img/background-slider-2.pngg");
+  background-image: url("../img/background-slider-2.png");
 }
 
 .wrapper-background:after {
@@ -1591,7 +1591,7 @@ input[type=number]::-webkit-outer-spin-button {
      background: linear-gradient(to bottom, #d74632 0%, #e1613e 100%);
      box-shadow: inset 0 2px 2px rgba(148, 39, 24, 1);
 }
-}
+
 
 
 
@@ -1628,16 +1628,30 @@ input[type=number]::-webkit-outer-spin-button {
 }
 
 .item-navigation a {
+    position: relative;
     color: #fff;
     font-size: 16px;
-line-height: 16px;
-        text-decoration: none;
+    line-height: 16px;
+    text-decoration: none;
     margin-left: 23px;
 }
 
 .item-navigation a:hover {
     color: #000;
 }
+
+.item-navigation a:hover::before  {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #fff;
+}
+
 
 .disabled {
     color: #fff;
