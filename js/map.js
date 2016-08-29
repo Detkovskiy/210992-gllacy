@@ -1,3 +1,21 @@
+var link = document.querySelector(".feedback-btn");
+var popup = document.querySelector(".modal-feedback");  
+var close = document.querySelector(".modal-content-close"); 
+
+
+link.addEventListener("click", function() {
+  event.preventDefault();
+  popup.classList.add("modal-feedback-show");
+}); 
+
+close.addEventListener("click", function(event) {
+  event.preventDefault();
+  popup.classList.remove("modal-feedback-show");
+ });
+
+
+
+
 ymaps.ready(init);
  
 function init(){     

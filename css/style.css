@@ -165,18 +165,7 @@ li.active > a {
 .sub-menu li:last-child {
     margin-bottom: 7px;
 }
-/* хз что это!!!!
-.main-menu > li > a.active-menu {
-    position: relative;
-    left: -14px;
-    margin-right: 1px;
-    border-bottom: none;
-    background: #d07058;
-    padding: 6px 14px;
-    border-radius: 15px;
-    color: #fff;
-}
-*/
+
 .active-sub-menu {
     background: #d07058;
     color: #fff;
@@ -485,7 +474,7 @@ body > input[type="radio"] {
 
 .slider {
     position: relative;
-    padding-top: 270px;
+    padding-top: 275px;
     text-align: center;
     color: #fff;
 }
@@ -535,6 +524,7 @@ body > input[type="radio"] {
     position: absolute;
     bottom: 25px;
     left: 0;
+    bottom: 19px;
     z-index: 3;
     font-size: 0;
 }
@@ -550,6 +540,10 @@ body > input[type="radio"] {
     border: solid 2px #fff;
     cursor: pointer;
     border-radius: 50%;
+}
+
+.slider-controls label:hover {
+    background: rgba(248,247,244,0.4);
 }
 
 #btn-1:checked ~ .wrapper-background #slide1,
@@ -613,23 +607,15 @@ body > input[type="radio"] {
     float: right;
     margin-top: 25px;
     padding: 11px 23px;
-  
-    
     font-size: 18px;
     line-height: 24px;
     font-weight: bold;
     color: #fff;
     text-decoration: none;
-
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-  
     background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
     border-radius: 100px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
 }
-
-
 
 .banner-btn:hover {
      background: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
@@ -817,7 +803,7 @@ li.features-4 {
     position: relative;
 
     z-index: 1;
-    margin-top: 40px; /*-85*/
+    margin-top: 43px; 
 }
 
 .banners-bottom {
@@ -893,17 +879,12 @@ li.features-4 {
 
 .button {
     padding: 10px 18px;
-    
-    
     border: none;
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
     color: #fff;
     outline: none;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-    
     background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
     border-radius: 100px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -975,7 +956,6 @@ li.features-4 {
     display: block;
     margin-top: 25px;
     padding: 10px 19px;
-   
     border-radius: 20px;
     border: none;
     font-size: 18px;
@@ -984,8 +964,6 @@ li.features-4 {
     color: #fff;
     text-decoration: none;
     text-align: center;
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
     background: #f26843;
     background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
     border-radius: 100px;
@@ -1213,6 +1191,7 @@ li.features-4 {
 .modal-feedback {
     position: absolute;
     margin-left: -238px;
+    display: none;
     box-sizing: border-box;
     border-radius: 10px;
     top: 338px;
@@ -1338,21 +1317,46 @@ form .modal {
 
 
 /*-------------------------------------------*/
-.label-email {
+.label-name-feedback {
     position: absolute;
-    top: 3px;
-    left: 34px;
+    top: 48px;
+    left: 38px;
     display: none;
     font-size: 11px;
     line-height: 13px;
     color: #5b9ddf;
 }
 
-.input-email:focus + .label-email,
-.input-password:focus + .label-password {
+.label-email-feedback {
+    position: absolute;
+    top: 112px;
+    left: 38px;
+    display: none;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+.label-text-feedback {
+    position: absolute;
+    top: 177px;
+    left: 38px;
+    display: none;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+
+.name-feedback:focus + .label-name-feedback,
+.email-feedback:focus + .label-email-feedback,
+.text-feedback:focus + .label-text-feedback {
     display: block;
 }
 
+.modal-feedback-show {
+    display: block;
+}
 
 /* catalog */
 
@@ -1369,7 +1373,7 @@ form .modal {
     vertical-align: top;
     list-style: none;  
     font-size: 14px;
-    margin-right: 8px;
+    margin-right: 7px;
 }
 
 .breadcrumbs a {
@@ -1400,7 +1404,7 @@ form .modal {
 
 /* filters */ 
 .filters {
-    
+    margin-top: 9px;
     width: 900px;
     font-size: 0px;
 }
@@ -1430,7 +1434,7 @@ form .modal {
 .popularity {
     margin-top: 5px;
     border: none;
-    padding: 7px 32px 7px 11px;
+    padding: 7px 32px 8px 11px;
     background: rgba(248,247,244,0.2);
     border-radius: 20px;
     color: #fff;
@@ -1475,10 +1479,10 @@ option {
     position: absolute;
     top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 1px solid #fff;
 }
 
 .fatness-radio input[type="radio"] + .radio-indicator:hover {
@@ -1488,8 +1492,8 @@ option {
 .fatness-radio input[type="radio"]:checked + .radio-indicator::before {
     content: "";
     position: absolute;
-    top: 3px;
-    left: 3px;
+    top: 4px;
+    left: 4px;
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -1500,7 +1504,7 @@ option {
     position: relative;
     margin-top: 5px;
     border: none;
-    padding: 9px 16px;
+    padding: 9px 19px 9px 16px;
     background: rgba(248,247,244,0.2);
     border-radius: 20px;
     color: #fff;
@@ -1509,7 +1513,7 @@ option {
 .fillers-checkbox {
     position: relative;
     padding-left: 32px;
-    margin-right: 18px;
+    margin-right: 16px;
     cursor: pointer;
 }
 
@@ -1523,12 +1527,12 @@ option {
 
 .fillers-checkbox input[type="checkbox"] + .checkbox-indicator {
     position: absolute;
-    top: 1px;
+    top: 0;
     left: 0;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     border-radius: 3px;
-    border: 2px solid #f8f7f4;
+    border: 1px solid #f8f7f4;
 }
 
 .fillers-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
@@ -1566,7 +1570,7 @@ option {
 
 .button-filter {
     margin-top: 39px;
-    padding: 9px 29px;
+    padding: 7px 28px;
    /* border: solid 2px #fff;*/
     border: none;
     border-radius: 20px;
@@ -1610,7 +1614,7 @@ option {
 .range-controls {
     position: relative;
     margin-top: 4px;
-    padding: 17px 15px;
+    padding: 16px 15px;
    
     border-radius: 20px;
     
@@ -1623,7 +1627,7 @@ option {
 .range-controls .scale {
     
     width: 189px;
-    height: 2px;
+    height: 4px;
 
     background: rgba(255, 255, 255, 0.3);
 }
@@ -1631,7 +1635,7 @@ option {
 .range-controls .bar {
     margin-left: 30px;
     margin-right: 60px;
-    height: 2px;
+    height: 4px;
 
     background: #ffffff;
 }
