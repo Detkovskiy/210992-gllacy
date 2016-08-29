@@ -207,11 +207,13 @@
               <a href="#">10  способов сервировки фруктовых щербетов <br>к столу</a>
             </div>
             <div class="banner-bottom subscribe">
+              <div class="subscribe-background">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
               <form class="form-subscribe" action="#" method="post">
                 <input class="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
                 <button type="submit" class="button">Отправить</button>
-              </form>  
+              </form>
+              </div>  
             </div>
           </div>
 
@@ -265,13 +267,13 @@
 
         <!-- Modal -->
 
-        <div class="feedback" id="#modal-feedback">
+        <div class="modal-feedback" id="#modal-feedback">
           <p>Мы обязательно вам ответим!</p>
-          <form class="modal-feedback" method="post" action="#" >
+          <form class="modal" method="post" action="#" >
             <input class="name-feedback" type="text" name="user" id="name" placeholder="Как Вас зовут?" required>
             <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа" required>
-            <textarea rows="6" name="text">Напишите что-нибудь...</textarea>
-            <button type="submit" class="button">Отправить</button>
+            <textarea class="text-feedback" rows="6" name="text">Напишите что-нибудь...</textarea>
+            <button type="submit" class="button modals">Отправить</button>
           </form>
         </div>
         

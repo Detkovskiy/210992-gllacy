@@ -842,6 +842,7 @@ li.features-4 {
     float: left;
     padding: 19px 240px 20px 20px;
     background: url(../img/banner-news.jpg);
+    background-color: #f8f7f4;
     border-radius: 15px;
 }
 
@@ -854,8 +855,14 @@ li.features-4 {
 
 .subscribe {
     float: right;
-    padding: 34px 26px;
-    background: url(../img/banner-subscribe.svg);
+    padding: 5px 6px;
+    background: url(../img/banner-subscribe.png);
+    background-color: #f8f7f4;
+    border-radius: 15px; 
+}
+
+.subscribe-background {
+    padding: 29px 20px 34px 20px;
     background-color: #f8f7f4;
     border-radius: 15px; 
 }
@@ -1202,6 +1209,65 @@ li.features-4 {
     border-bottom: 1px solid;
     border-bottom-color: rgba(255,255,255,0.2);
 }
+
+.modal-feedback {
+    position: absolute;
+    box-sizing: border-box;
+    border-radius: 10px;
+    top: 120px;
+    left: 363px;
+
+    width: 477px;
+    padding: 23px 24px;
+
+    color: #000000;
+
+    background: #f8f3f0 url("img/pattern-white.jpg");
+
+}
+
+.modal-feedback p {
+    margin: 0;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 500;
+}
+
+.modal input {
+    display: block;
+    width: 265px;
+    border: solid 1px #ccc;
+    padding: 14px 14px;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+}
+
+.name-feedback,
+.email-feedback {
+    
+}
+
+.text-feedback {
+    padding: 14px 14px;
+    width: 428px;
+    border-radius: 3px;
+    border: solid 1px #ccc;
+    font-size: 16px;
+    line-height: 24px;
+    color: #999999;
+    font-weight: 400;
+}
+
+
+.modals {
+    display: block;
+    float: right;
+} 
+
+
+
 
 /* catalog */
 
