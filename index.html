@@ -269,11 +269,15 @@
 
         <div class="modal-feedback" id="#modal-feedback">
           <p>Мы обязательно вам ответим!</p>
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <form class="modal" method="post" action="#" >
             <input class="name-feedback" type="text" name="user" id="name" placeholder="Как Вас зовут?" required>
-            <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа" required>
-            <textarea class="text-feedback" rows="6" name="text">Напишите что-нибудь...</textarea>
-            <button type="submit" class="button modals">Отправить</button>
+            <label class="label-email">Введите почту</label>
+            <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа?" required>
+            <label class="label-email">Введите почту</label>
+            <textarea class="text-feedback" rows="6" name="text" placeholder="Напишите что-нибудь..."></textarea>
+            <label class="label-email">Введите почту</label>
+            <button type="submit" class="button btn-modal">Отправить</button>
           </form>
         </div>
         

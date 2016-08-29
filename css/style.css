@@ -1212,13 +1212,14 @@ li.features-4 {
 
 .modal-feedback {
     position: absolute;
+    margin-left: -238px;
     box-sizing: border-box;
     border-radius: 10px;
-    top: 120px;
-    left: 363px;
-
+    top: 338px;
+    left: 50%;
+    z-index: 20;
     width: 477px;
-    padding: 23px 24px;
+    padding: 16px 24px 27px 24px;
 
     color: #000000;
 
@@ -1226,47 +1227,131 @@ li.features-4 {
 
 }
 
+form .modal {
+    font-family: inherit;
+    font-weight: 400;
+}
+
 .modal-feedback p {
     margin: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 500;
+    color: #323232;
 }
 
 .modal input {
     display: block;
-    width: 265px;
+    margin-top: 20px;
+    width: 237px;
     border: solid 1px #ccc;
-    padding: 14px 14px;
-    border-radius: 3px;
+    padding: 9px 14px;
+    border-radius: 4px;
     font-size: 16px;
     line-height: 24px;
     color: #999999;
 }
 
-.name-feedback,
-.email-feedback {
-    
+.modal input:hover {
+    border: solid 1px #9a9a9a;
+    box-shadow: 0 0 0 1px #9a9a9a;
+}
+
+
+
+.modal-content-close {
+    position: absolute;
+    top: 23px;
+    right: 24px;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    font-size: 0;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 2px;
+  background-color: #000;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
 }
 
 .text-feedback {
-    padding: 14px 14px;
-    width: 428px;
-    border-radius: 3px;
+    margin-top: 20px;
+    padding: 6px 14px 0px 14px;
+    width: 400px;
+    border-radius: 4px;
     border: solid 1px #ccc;
     font-size: 16px;
     line-height: 24px;
-    color: #999999;
-    font-weight: 400;
+    color: #999999; 
+    resize: none;
 }
 
+.text-feedback:hover {
+    border: solid 1px #9a9a9a;
+    box-shadow: 0 0 0 1px #9a9a9a;
+}
 
-.modals {
+.btn-modal {
+    padding: 10px 23px;
+    margin-top: 20px;
     display: block;
     float: right;
+    text-shadow: none;
 } 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------*/
+.label-email {
+    position: absolute;
+    top: 3px;
+    left: 34px;
+    display: none;
+    font-size: 11px;
+    line-height: 13px;
+    color: #5b9ddf;
+}
+
+.input-email:focus + .label-email,
+.input-password:focus + .label-password {
+    display: block;
+}
 
 
 /* catalog */
@@ -1396,6 +1481,10 @@ option {
     border: 2px solid #fff;
 }
 
+.fatness-radio input[type="radio"] + .radio-indicator:hover {
+    box-shadow: 0 0 0 1px #fff;
+}
+
 .fatness-radio input[type="radio"]:checked + .radio-indicator::before {
     content: "";
     position: absolute;
@@ -1439,8 +1528,13 @@ option {
     width: 16px;
     height: 16px;
     border-radius: 3px;
-    border: 2px solid #fff;
+    border: 2px solid #f8f7f4;
 }
+
+.fillers-checkbox input[type="checkbox"] + .checkbox-indicator:hover {
+    box-shadow: 0 0 0 1px #fff;
+}
+
 
 .fillers-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
     content: "";
@@ -1449,7 +1543,7 @@ option {
     left: 3px;
     width: 5px;
     height: 2px;
-    background-color: #fff;
+    background-color: #f8f7f4;
 }
 
 .fillers-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
@@ -1459,7 +1553,7 @@ option {
     left: 5px;
     width: 10px;
     height: 2px;
-    background-color: #fff;
+    background-color: #f8f7f4;
 }
 
 .fillers-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
@@ -1472,14 +1566,29 @@ option {
 
 .button-filter {
     margin-top: 39px;
-    padding: 8px 29px;
-    border: solid 1px #fff;
+    padding: 9px 29px;
+   /* border: solid 2px #fff;*/
+    border: none;
     border-radius: 20px;
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
     color: #fff;  
+    outline: none;
     background: rgba(248,247,244,0.2);
+    box-shadow: 0 0 0 2px #fff;
+    cursor: pointer;
+}
+
+.button-filter:hover {
+    color: #000;  
+    background: #fff;
+}
+
+.button-filter:active {
+    color: #000;  
+    background: #fff;
+    box-shadow: inset 0 2px 2px 1px #696969; 
 }
 
 .filter-range-title {
