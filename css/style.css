@@ -28,7 +28,7 @@ h2 {
 
 /* wrapper */
 .wrapper {   
-    width: 1146px;  /*1146*/
+    width: 1146px;  
     margin: 0 auto;
     padding-left: 27px;
     padding-right: 27px;
@@ -39,14 +39,12 @@ h2 {
 }
 
 /* logo */
-
 .logo {
     float: left;
     margin-left: -5px;
 }
 
 /* main-navigatoin */
-
 .main-navigatoin {
     float: left;
 }
@@ -664,18 +662,26 @@ body > input[type="radio"] {
 
 .price {
     position: absolute;
-    top: 216px;
+    top: 218px;
     margin-top: 0px;
-    font-size: 30px;
+    font-size: 45px;
     line-height: 45px;
     font-weight: bold;  
     text-shadow: 1px 1px 3px rgba(49,50,53,0.5);
 }
 
-.price span {
-    font-size: 45px;
+.sign {
+    position: absolute;
+    top: 223px;
+    left: 125px;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: bold;  
+    text-shadow: 1px 1px 3px rgba(49,50,53,0.5);
 
 }
+
+
 
 
 .item-name {
@@ -1517,6 +1523,17 @@ option {
     cursor: pointer;
 }
 
+
+
+.fruit {
+    padding-left: 34px;
+    margin-right: 18px;
+}
+
+.syrups {
+    margin-right: 16px;
+}
+
 .fillers-checkbox:last-child {
     margin-right: 0;
 }
@@ -1704,7 +1721,7 @@ input[type=number]::-webkit-outer-spin-button {
 /* item-list */
 
 .item-list {
-    margin-top: 80px;
+    margin-top: 30px;
     font-size: 0px; 
 }
 
@@ -1715,7 +1732,6 @@ input[type=number]::-webkit-outer-spin-button {
     font-size: 16px;
     width: 267px;
     min-height: 405px;
-    margin-top: -40px;
     padding-left: 13px;
     padding-right: 13px;
     padding-top: 9px;
@@ -1730,6 +1746,11 @@ input[type=number]::-webkit-outer-spin-button {
     margin-right: -13px;
 }
 
+
+.item:nth-child(n+5) {
+    margin-top: -52px;
+}
+
 .item:hover {
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
@@ -1739,7 +1760,7 @@ input[type=number]::-webkit-outer-spin-button {
 .item-list-review {
     position: absolute;
     left: 43px;
-    top: 359px;
+    top: 353px;
     display: none; 
 }
 
@@ -1752,10 +1773,6 @@ input[type=number]::-webkit-outer-spin-button {
     line-height: 24px;
     font-weight: bold;
     color: #fff;
-
-    text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
-    
     background: linear-gradient(to bottom, #f26843 0%, #e74b36 100%);
     border-radius: 100px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
@@ -1771,39 +1788,37 @@ input[type=number]::-webkit-outer-spin-button {
      box-shadow: inset 0 2px 2px rgba(148, 39, 24, 1);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .item:hover .item-list-review {
     display: block;
     z-index: 10;
 }
 
+.icon {
+    margin-left: 5px;
+}
+
+
+
 /* item-navigation */
 
 .item-navigation {
     padding: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     text-align: right;
     font-size: 0;
     border-bottom: solid 1px rgba(255, 255, 255, 0.3);
 }
 
 .item-navigation li {
+    margin-right: 2px;
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    font-size: 0;
+}
+
+.item-navigation li:last-child {
+    margin-right: 0;
 }
 
 .item-navigation a {
