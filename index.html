@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
     <meta charset="utf-8">
+    <link href="css/normalize.css" rel="stylesheet">  
+    <link href="css/style.css" rel="stylesheet">  
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>Магазин Глэйси</title>
   </head>
@@ -18,13 +18,13 @@
 
         <header class="header-top clearfix">
           <div class="logo">
-            <img src="img/logo.svg" width="154" height="64" alt="Магазин мороженки">
+            <img src="img/logo.svg" width="154" height="64" alt="Gllacy шоп">
           </div>
 
           <nav class="main-navigatoin">
             <ul class="main-menu">
-              <li>
-                <a class="menu-item" href="#">Каталог</a>
+              <li class="menu-item">
+                <a href="#">Каталог</a>
                 <div class="wrapper-menu"> 
                   <ul class="sub-menu">
                     <li><span>Новинки</span></li>
@@ -35,8 +35,8 @@
                   </ul>
                 </div>
               </li>  
-              <li><a class="menu-item" href="#">Доставка и оплата</a></li>
-              <li><a class="menu-item" href="#">О Компании</a></li>
+              <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+              <li class="menu-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
 
@@ -46,7 +46,8 @@
               <div class="wrapper-menu">
                 <div class="search">
                   <form action="#" method="post">
-                    <input type="search" class="input-search" name="search" placeholder="Что ищем?">
+                    <input type="search" class="input-search" id="input-search" name="search" placeholder="Что ищем?">
+                    <label class="label-search" for="input-search">Поиск</label>
                   </form>
                 </div>
               </div>
@@ -56,10 +57,12 @@
               <div class="wrapper-menu">
                 <div class="login">
                   <form class="login-form" action="#" method="post">
-                    <input type="email" class="input-email" name="email-address" placeholder="Электронная почта">
-                    <input type="password" class="input-password" name="password" placeholder="Пароль">
+                    <input type="email" class="input-email" id="input-email" name="email-address" placeholder="Электронная почта">
+                    <label class="label-email" for="input-email">Введите почту</label>
+                    <input type="password" class="input-password" id="input-password" name="password" placeholder="Пароль">
+                    <label class="label-password" for="input-password">Введите пароль</label>
                     <div class="buttons clearfix">
-                      <button type="submit" class="button block">Войти</button>
+                      <button type="submit" class="button btn-login">Войти</button>
                       <a class="button-link" href="#">Забыли пароль?</a>
                       <a class="button-link" href="#">Новая регистрация</a>
                     </div>                  
@@ -68,7 +71,7 @@
               </div>
             </div>
             <div class="user-cart">
-              <a href="#"><img src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Пусто</a>
+              <a href="#"><img class="user-cart-img" src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Пусто</a>
               <div class="wrapper-menu">
                 <div class="cart clearfix">
                   <table class="cart-table">
@@ -204,14 +207,15 @@
           <div class="banners-bottom clearfix">
             <div class="banner-bottom news">
               <h4>Новое в нашем блоге</h4>
-              <a href="#">10  способов сервировки фруктовых щербетов <br>к столу</a>
+              <a href="#">10 способов сервировки фруктовых щербетов <br>к столу</a>
             </div>
             <div class="banner-bottom subscribe">
               <div class="subscribe-background">
               <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =) </p>
               <form class="form-subscribe" action="#" method="post">
-                <input class="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
-                <button type="submit" class="button">Отправить</button>
+                <input class="email-subscribe" id="email-subscribe" type="email" name="email" placeholder="Электронная почта" required>
+                <label class="label-subscribe" for="email-subscribe">Введите почту</label>
+                <button type="submit" class="button btn-subscribe">Отправить</button>
               </form>
               </div>  
             </div>
@@ -219,7 +223,7 @@
 
           <!-- Map -->
 
-          <div id="map">
+          <div id="map" class="map">
             <div class="contact">
               <ul>
                 <li>Адрес главного офиса и офлайн магазина:</li>
@@ -255,7 +259,7 @@
             </div>
             <div class="footer-copyright">
               <a href="https://htmlacademy.ru"><img src="img/icon/logo-footer.svg" width="108" height="37" alt="Html Academy"></a>
-              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> @ 2016</p>
+              <p>Сделано в <a class="developer" href="https://htmlacademy.ru">HTML Academy</a> @ 2016</p>
             </div>
         </footer>
 
@@ -266,10 +270,10 @@
           <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
           <form class="modal" method="post" action="#" >
             <input class="name-feedback" type="text" name="user" id="name" placeholder="Как Вас зовут?" required>
-            <label class="label-name-feedback">Введите имя</label>
+            <label class="label-name-feedback" for="name">Введите имя</label>
           
             <input class="email-feedback" type="email" name="mail" id="email" placeholder="Ваша почта для ответа?" required>
-            <label class="label-email-feedback">Введите почту</label>
+            <label class="label-email-feedback" for="email">Введите почту</label>
             
             <textarea class="text-feedback" rows="6" name="text" placeholder="Напишите что-нибудь..."></textarea>
             <label class="label-text-feedback">Введите сообщение</label>
@@ -277,6 +281,7 @@
             <button type="submit" class="button btn-modal">Отправить</button>
           </form>
         </div>
+        <div class="modal-overlay"></div>
       </div>   
     </div>
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>

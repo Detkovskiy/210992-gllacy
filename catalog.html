@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
+    <meta charset="utf-8">
     <link href="css/normalize.css" rel="stylesheet">  
     <link href="css/style.css" rel="stylesheet">  
-    <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <title>Сливочное мороженое</title>
   </head>
   <body>
     <div class="wrapper-background no-slider">
-      <div class="wrapper">
+      <div class="wrapper shadow">
 
         <!-- Header  -->
 
         <header class="header-top">
           <div class="logo">
-            <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Гласси шоп"></a>
+            <a href="index.html"><img src="img/logo.svg" width="154" height="64" alt="Gllacy шоп"></a>
           </div>
 
           <nav class="main-navigatoin">
             <ul class="main-menu">
-              <li class="active">
-                <a class="menu-item">Каталог</a>
+              <li class="menu-item active">
+                <a>Каталог</a>
                 <div class="wrapper-menu">
                   <ul class="sub-menu">
                     <li><span>Новинки</span></li>
@@ -32,8 +32,8 @@
                   </ul>
                 </div>
               </li>  
-              <li><a class="menu-item" href="#">Доставка и оплата</a></li>
-              <li><a class="menu-item" href="#">О Компании</a></li>
+              <li class="menu-item"><a href="#">Доставка и оплата</a></li>
+              <li class="menu-item"><a href="#">О Компании</a></li>
             </ul>
           </nav>
 
@@ -43,7 +43,8 @@
               <div class="wrapper-menu">
                 <div class="search">
                   <form action="#" method="post">
-                    <input type="search" class="input-search" name="search" placeholder="Что ищем?">
+                    <input type="search" class="input-search" id="input-search" name="search" placeholder="Что ищем?">
+                    <label class="label-search" for="input-search">Поиск</label>
                   </form>
                 </div>
               </div>
@@ -53,12 +54,12 @@
               <div class="wrapper-menu">
                 <div class="login">
                   <form class="login-form" action="#" method="post">
-                      <input  type="email" class="input-email" name="email-address" placeholder="Электронная почта">
-                      <label class="label-email">Введите почту</label>
-                    <input type="password" class="input-password" name="password" placeholder="Пароль">
-                    <label class="label-password">Введите пароль</label>
+                    <input type="email" class="input-email" id="input-email" name="email-address" placeholder="Электронная почта">
+                    <label class="label-email" for="input-email">Введите почту</label>
+                    <input type="password" class="input-password" id="input-password" name="password" placeholder="Пароль">
+                    <label class="label-password" for="input-password">Введите пароль</label>
                     <div class="buttons clearfix">
-                      <button type="submit" class="button block">Войти</button>
+                      <button type="submit" class="button btn-login">Войти</button>
                       <a class="button-link" href="#">Забыли пароль?</a>
                       <a class="button-link" href="#">Новая регистрация</a>
                     </div>                  
@@ -67,7 +68,7 @@
               </div>
             </div>
             <div class="user-cart">
-              <a href="#"><img src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Пусто</a>
+              <a href="#"><img class="user-cart-img" src="img/icon/cart-white.svg" width="21" height="20" alt="Корзина">Корзина</a>
               <div class="wrapper-menu">
                 <div class="cart clearfix">
                   <table class="cart-table">
@@ -359,7 +360,7 @@
             </div>
             <div class="footer-copyright">
               <a href="https://htmlacademy.ru"><img src="img/icon/logo-footer.svg" width="108" height="37" alt="Html Academy"></a>
-              <p>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> @ 2016</p>
+              <p>Сделано в <a class="developer" href="https://htmlacademy.ru">HTML Academy</a> @ 2016</p>
             </div>
         </footer>
       </div>

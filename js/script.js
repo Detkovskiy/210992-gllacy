@@ -1,20 +1,31 @@
 var link = document.querySelector(".feedback-btn");
 var popup = document.querySelector(".modal-feedback");  
 var close = document.querySelector(".modal-content-close"); 
-
+var overlay = document.querySelector(".modal-overlay");
+var tap = document.querySelector("#btn-1");
 
 link.addEventListener("click", function() {
-  event.preventDefault();
   popup.classList.add("modal-feedback-show");
+  overlay.classList.add("modal-overlay-show");
 }); 
+
+function closeFeedback() {
+  if (popup.classList.contains("modal-feedback-show")) {
+      popup.classList.remove("modal-feedback-show");}
+  if (overlay.classList.contains("modal-overlay-show")) {
+      overlay.classList.remove("modal-overlay-show");
+}} 
 
 close.addEventListener("click", function(event) {
   event.preventDefault();
-  popup.classList.remove("modal-feedback-show");
- });
+  closeFeedback();
+});
 
-
-
+window.addEventListener("keydown", function(event) {
+  if (event.keyCode === 27) {
+    closeFeedback();
+    }
+});
 
 ymaps.ready(init);
  
